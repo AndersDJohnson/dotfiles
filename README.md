@@ -20,6 +20,9 @@ Notes
 -----
 
 ### Submodules
-1. [AndersDJohnson/dotvim](http://github.com/AndersDJohnson/dotvim)
 
+#### [AndersDJohnson/dotvim](http://github.com/AndersDJohnson/dotvim)
+configuration:
+   * `ln -s ~/.dotfiles/vim ~/.vim`
+   * `ln -s ~/.vim/vimrc ~/.vimrc`
 

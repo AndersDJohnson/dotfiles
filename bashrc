@@ -51,7 +51,24 @@ fi
 
 # set prompt depending on color support
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    #PS1='${debian_chroot:+($debian_chroot)}\[\036[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n\$ '
+	
+	HISTORY_NUM="[\!]"
+	#STATUS_COLOR="\`STATUS=\$?; if [[ \$STATUS = "0" ]]; then echo -n "\\[\\033[32m\\]"; else { echo -n "\\[\\033[31m\\]"; } fi; echo -n '^'; echo -n \$STATUS; echo -n ' '; \`"
+	STATUS_COLOR="\`if [[ \$? = "0" ]]; then echo -n "\\[\\033[32m\\]"; else { echo -n "\\[\\033[31m\\]"; } fi;\`"
+	END_COLOR='\[\033[0m\]'
+	
+	#PATH_LENGTH="\`if [[ `pwd|wc -c|tr -d " "` > 18 ]]; then echo "\\W"; else echo "\\w"; fi\`"
+	USER_HOST="\u@\H"
+	
+	#CORNER_TOP="\[\016\]l\[\017\]"
+	#CORNER_LOW="\[\016\]m\[\017\]-"
+	CORNER_TOP="\[\033(0\]l\[\033(B\]-"
+	CORNER_LOW="\[\033(0\]m\[\033(B\]-"
+
+	PROMPT_COMMAND='PS1="\n${CORNER_TOP} \[\033[0;33m\]\w${END_COLOR} \[\033[0;36m\]${USER_HOST}${END_COLOR} \[\033[0;34m\]\d \T${END_COLOR} \n${CORNER_LOW} ${STATUS_COLOR}\$${END_COLOR} "; echo -ne "\033]0;`hostname -s`:`pwd`\007"'
+
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi

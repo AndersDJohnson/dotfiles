@@ -1,0 +1,30 @@
+# .screenrc
+
+# graphical config
+shelltitle ''
+startup_message off
+vbell on
+caption always "%{= yk}%-w%{= rw}%n %t%{-}%+w"
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{= r.} %{= .y} %H CPUs:(%l) %= %{= .w} %D %m/%d %C:%s%a "
+ignorecase on
+defscrollback 8192shelltitle ''
+startup_message off
+vbell on
+caption always "%{= yk}%-w%{= rw}%n %t%{-}%+w"
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{= r.} %{= .y} %H CPUs:(%l) Mem:%1MB %= %{= .w} %D %m/%d %C:%s%a "
+
+# ignore case
+ignorecase on
+
+# scrollback
+defscrollback 8192
+
+# Control+z as escape combination
+escape ^Zz
+
+# open new window in current directory
+bind ^x stuff "screen -X chdir \$PWD; screen^M"

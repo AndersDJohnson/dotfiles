@@ -116,16 +116,22 @@ if [ -f /etc/profile.d/autojump.bash ]; then
     . /etc/profile.d/autojump.bash
 fi
 
+# add user bin directory to PATH
+if [ -d ${HOME}/bin ]; then
+	PATH=${HOME}/bin:${PATH}
+fi
+
 # set MAIL environment variable
 MAIL=/var/spool/mail/anders && export MAIL
 
 
 # add Android SDK tools to PATH
 ANDROID_SDKS="${HOME}/android-sdks"
-if [ -d $ANDROID_SDKS/tools ]; then
-	export PATH=$PATH:$ANDROID_SDKS/tools
+if [ -d ${ANDROID_SDKS}/tools ]; then
+	PATH=${PATH}:${ANDROID_SDKS}/tools
 fi
 if [ -d "$ANDROID_SDKS/platform-tools" ]; then
-	export PATH=$PATH:$ANDROID_SDKS/platform-tools
+	PATH=${PATH}:${ANDROID_SDKS}/platform-tools
 fi
 
+export PATH

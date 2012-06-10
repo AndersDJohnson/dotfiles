@@ -12,3 +12,9 @@ Installation
 2. Create symlinks:
    * For example, `ln -s ~/.dotfiles/screenrc ~/.screenrc`
 
+Notes
+-----
+
+Includes my [dotvim](http://github.com/AndersDJohnson/dotvim) repository as a submodule.
+
+

@@ -21,7 +21,7 @@ hardstatus string "%{= r.} %{= .y} %H CPUs:(%l) Mem:%1MB %= %{= .w} %D %m/%d %C:
 ignorecase on
 
 # scrollback
-defscrollback 8192
+defscrollback 4096
 
 # Control+z as escape combination
 escape ^Zz

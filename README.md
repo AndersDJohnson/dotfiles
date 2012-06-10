@@ -20,6 +20,6 @@ Notes
 -----
 
 ### Submodules
-1. AndersDJohnson/dotvim
+1. [AndersDJohnson/dotvim](http://github.com/AndersDJohnson/dotvim)
 
 

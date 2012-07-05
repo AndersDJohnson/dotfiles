@@ -23,8 +23,7 @@ Notes
 
 #### [AndersDJohnson/dotvim](http://github.com/AndersDJohnson/dotvim)
 configuration (all are optional):
-   * `ln -s ~/.dotfiles/vim ~/.vim`
-   * `ln -s ~/.vim/vimrc ~/.vimrc`
+   * `ln -s ~/.dotfiles/vim ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc`
    * `ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf`
    * `ln -s ~/.dotfiles/bashrc ~/.bashrc`
    * `ln -s ~/.dotfiles/bash_aliases ~/.bash_aliases`

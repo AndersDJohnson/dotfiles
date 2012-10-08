@@ -152,8 +152,26 @@ ANDROID_SDKS="${HOME}/android-sdks"
 if [ -d ${ANDROID_SDKS}/tools ]; then
 	PATH=${PATH}:${ANDROID_SDKS}/tools
 fi
-if [ -d "$ANDROID_SDKS/platform-tools" ]; then
+if [ -d "${ANDROID_SDKS}/platform-tools" ]; then
 	PATH=${PATH}:${ANDROID_SDKS}/platform-tools
 fi
+
+# Android SDK home to PATH
+export ANDROID_HOME=$HOME/android-sdks
+
+# Node.js set to look for npm global modules
+export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/ 
+export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/less/lib 
+export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/ 
+export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/ 
+export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/ 
+
+# Include config for bc calculator
+if command -v bc > /dev/null 2>&1; then
+	if [ -f ~/.bcrc ]; then
+		export BC_ENV_ARGS=~/.bcrc
+	fi
+fi
+
 
 export PATH

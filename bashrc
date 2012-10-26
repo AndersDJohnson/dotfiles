@@ -49,6 +49,8 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+color_prompt="no"
+
 # set prompt depending on color support
 if [ "$color_prompt" = yes ]; then
     #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
@@ -173,5 +175,24 @@ if command -v bc > /dev/null 2>&1; then
 	fi
 fi
 
+# Custom WEKA 3.6.8 install
+WEKAINSTALL_368="/etc/weka-3-6-8"
+if [ -d "${WEKAINSTALL_368}" ]
+then
+	export WEKAINSTALL="${WEKAINSTALL_368}"
+	WEKAJAR="${WEKAINSTALL_368}/weka.jar" 
+	if [ -f "${WEKAJAR}" ]
+	then
+		export CLASSPATH="${CLASSPATH}:${WEKAJAR}"
+	fi
+fi
+
+# RVM - ruby version manager
+RVMBIN="${HOME}/.rvm/bin"
+if [ -d "$RVMBIN" ]
+then
+	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
 
 export PATH

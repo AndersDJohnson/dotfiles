@@ -196,3 +196,7 @@ fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
 
 export PATH
+
+export PATH=/home/anders/bin/Sencha/Cmd/3.0.0.250:$PATH
+
+export SENCHA_CMD_3_0_0="/home/anders/bin/Sencha/Cmd/3.0.0.250"

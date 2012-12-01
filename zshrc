@@ -37,3 +37,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# common shell config
+if [ -f ~/.commonshrc ]; then
+    source ~/.commonshrc
+fi
+

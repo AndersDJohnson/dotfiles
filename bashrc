@@ -140,63 +140,8 @@ if [ -f /etc/profile.d/autojump.bash ]; then
     . /etc/profile.d/autojump.bash
 fi
 
-# add user bin directory to PATH
-if [ -d ${HOME}/bin ]; then
-	PATH=${HOME}/bin:${PATH}
+# common shell config
+if [ -f ~/.commonshrc ]; then
+    . ~/.commonshrc
 fi
 
-# set MAIL environment variable
-MAIL=/var/spool/mail/anders && export MAIL
-
-
-# add Android SDK tools to PATH
-ANDROID_SDKS="${HOME}/android-sdks"
-if [ -d ${ANDROID_SDKS}/tools ]; then
-	PATH=${PATH}:${ANDROID_SDKS}/tools
-fi
-if [ -d "${ANDROID_SDKS}/platform-tools" ]; then
-	PATH=${PATH}:${ANDROID_SDKS}/platform-tools
-fi
-
-# Android SDK home to PATH
-export ANDROID_HOME=$HOME/android-sdks
-
-# Node.js set to look for npm global modules
-export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/ 
-export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/less/lib 
-export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/ 
-export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/ 
-export NODE_PATH=${NODE_PATH}:/usr/local/lib/node_modules/ 
-
-# Include config for bc calculator
-if command -v bc > /dev/null 2>&1; then
-	if [ -f ~/.bcrc ]; then
-		export BC_ENV_ARGS=~/.bcrc
-	fi
-fi
-
-# Custom WEKA 3.6.8 install
-WEKAINSTALL_368="/etc/weka-3-6-8"
-if [ -d "${WEKAINSTALL_368}" ]
-then
-	export WEKAINSTALL="${WEKAINSTALL_368}"
-	WEKAJAR="${WEKAINSTALL_368}/weka.jar" 
-	if [ -f "${WEKAJAR}" ]
-	then
-		export CLASSPATH="${CLASSPATH}:${WEKAJAR}"
-	fi
-fi
-
-# RVM - ruby version manager
-RVMBIN="${HOME}/.rvm/bin"
-if [ -d "$RVMBIN" ]
-then
-	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-fi
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
-
-export PATH
-
-export PATH=/home/anders/bin/Sencha/Cmd/3.0.0.250:$PATH
-
-export SENCHA_CMD_3_0_0="/home/anders/bin/Sencha/Cmd/3.0.0.250"

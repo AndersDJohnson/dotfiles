@@ -1,0 +1,8 @@
+# include requires git 1.7.10+ or some such
+[include]
+	path = .gitconfig-user
+	path = .gitconfig-github
+[color]
+	ui = true
+[push]
+	default = tracking

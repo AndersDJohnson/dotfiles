@@ -1,3 +1,7 @@
+# .zshrc zsh shell configuration
+
+SHELLRC=".zshrc"
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -42,4 +46,3 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.commonshrc ]; then
     source ~/.commonshrc
 fi
-

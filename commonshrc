@@ -62,3 +62,8 @@ export SENCHA_CMD_3_0_0="/home/anders/bin/Sencha/Cmd/3.0.0.250"
 
 alias mochac="mocha --compilers coffee:coffee-script"
 
+# direnv hook
+# https://github.com/zimbatm/direnv
+if command -v direnv > /dev/null 2>&1; then
+	eval `direnv hook $(basename $SHELL)`
+fi

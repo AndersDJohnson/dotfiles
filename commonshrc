@@ -65,5 +65,14 @@ alias mochac="mocha --compilers coffee:coffee-script"
 # direnv hook
 # https://github.com/zimbatm/direnv
 if command -v direnv > /dev/null 2>&1; then
-	eval `direnv hook $(basename $SHELL)`
+	SHELLNAME=''
+	if [ -n "$BASH" ]; then
+		SHELLNAME="bash"
+	elif [ -n "$ZSH_NAME" ]; then
+		SHELLNAME="zsh"
+	fi
+	if [ -n "$SHELLNAME" ]; then
+		eval `direnv hook $SHELLNAME`
+	fi
 fi
+

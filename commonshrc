@@ -57,8 +57,8 @@ fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Sencha Cmd paths
-export PATH=/home/anders/bin/Sencha/Cmd/3.0.0.250:$PATH
-export SENCHA_CMD_3_0_0="/home/anders/bin/Sencha/Cmd/3.0.0.250"
+export PATH=/home/anders/lib/Sencha/Cmd/3.0.0.250:$PATH
+export SENCHA_CMD_3_0_0="/home/anders/lib/Sencha/Cmd/3.0.0.250"
 
 alias mochac="mocha --compilers coffee:coffee-script"
 
@@ -75,4 +75,7 @@ if command -v direnv > /dev/null 2>&1; then
 		eval `direnv hook $SHELLNAME`
 	fi
 fi
+
+# z ( https://github.com/rupa/z )
+source ~/.dotfiles/z/z.sh
 

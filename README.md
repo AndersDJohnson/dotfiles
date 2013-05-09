@@ -29,3 +29,8 @@ configuration (all are optional):
    * `ln -s ~/.dotfiles/bash_aliases ~/.bash_aliases`
    * `ln -s ~/.dotfiles/screenrc ~/.screenrc`
 
+### Per-host configurations
+
+Some configuration files will detect and include host-specific configuration files.
+For example, "commonshrc" looks for "~/.commonshrc.host", which I set up as a symlink to the specific commonshrc configuration file for that host in version control.
+

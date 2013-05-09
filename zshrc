@@ -2,6 +2,12 @@
 
 SHELLRC=".zshrc"
 
+###
+# shell options
+###
+# dotglob lets glob match dotfiles
+setopt dotglob
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 

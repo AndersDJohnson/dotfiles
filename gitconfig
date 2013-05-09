@@ -5,4 +5,5 @@
 [color]
 	ui = true
 [push]
-	default = simple
+	# not supported in git 1.7.x
+	#default = simple

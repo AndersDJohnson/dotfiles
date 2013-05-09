@@ -42,8 +42,11 @@ export UPDATE_ZSH_DAYS=13
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-#plugins=(git github node npm coffee cake vundle screen jake-node heroku)
-plugins=(git)
+
+# per-host
+if [ -f ~/.zshrc.host ]; then
+    source ~/.zshrc.host
+fi
 
 source $ZSH/oh-my-zsh.sh
 

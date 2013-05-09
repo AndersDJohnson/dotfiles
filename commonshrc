@@ -1,5 +1,11 @@
 # common configurations for some shells (bash, zsh, etc.)
 
+# per-host configurations
+
+if [ -f ~/.commonshrc.host ]; then
+  source ~/.commonshrc.host
+fi
+
 # add user bin directory to PATH
 if [ -d ${HOME}/bin ]; then
 	PATH=${HOME}/bin:${PATH}

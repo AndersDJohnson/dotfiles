@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # Autocorrect exceptions
-alias vim='nocorrect vim '
+#alias vim='nocorrect vim '
 
 # common shell config
 if [ -f ~/.commonshrc ]; then

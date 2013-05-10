@@ -7,3 +7,16 @@
 [push]
 	# not supported in git 1.7.x
 	#default = simple
+[alias]
+	st = status -sb
+	co = checkout
+	br = branch
+	l = log --pretty=oneline --stat --decorate
+	la = !git config -l | grep alias | cut -c 7-
+	fixup = commit --amend --no-edit
+	reword = commit --amend
+	last = diff --cached HEAD^
+	alias = "!f() { git config --global alias.$1 \"$2\"; }; f"
+	unalias = "!f() { git config --global --unset alias.$1; }; f"
+	pf = push --force
+	this = diff --staged

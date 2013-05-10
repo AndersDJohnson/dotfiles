@@ -2,6 +2,10 @@
 
 SHELLRC=".zshrc"
 
+function src () {
+  source ~/.zshrc
+}
+
 ###
 # shell options
 ###

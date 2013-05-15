@@ -1,4 +1,12 @@
 
+# Sencha Cmd paths
+export PATH=/home/anders/lib/Sencha/Cmd/3.0.0.250:$PATH
+export SENCHA_CMD_3_0_0="/home/anders/lib/Sencha/Cmd/3.0.0.250"
+
+# Oracle paths
+export ORACLE_HOME=/home/anders/app/anders/product/11.2.0/dbhome_1
+export ORACLE_SID=xe
+
 # junit
 if [ -f "/usr/share/java/junit4-4.10.jar" ]; then
   export CLASSPATH="$CLASSPATH:/usr/share/java/junit4-4.10.jar"

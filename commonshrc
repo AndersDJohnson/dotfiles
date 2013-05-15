@@ -21,14 +21,6 @@ function noctrlchars () {
    perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' $@
 }
 
-# Sencha Cmd paths
-export PATH=/home/anders/lib/Sencha/Cmd/3.0.0.250:$PATH
-export SENCHA_CMD_3_0_0="/home/anders/lib/Sencha/Cmd/3.0.0.250"
-
-# Oracle paths
-export ORACLE_HOME=/home/anders/app/anders/product/11.2.0/dbhome_1
-export ORACLE_SID=xe
-
 # PHPUnit
 alias phpunit="phpunit --colors"
 alias phpunit--no-colors="phpunit --colors"

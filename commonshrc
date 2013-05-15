@@ -7,8 +7,9 @@ fi
 
 export EDITOR="vim"
 
-# set MAIL environment variable
-MAIL=/var/spool/mail/anders && export MAIL
+function strhas () {
+  test "${0#*$1}" != "$0"
+}
 
 # add Android SDK tools to PATH
 ANDROID_SDKS="${HOME}/android-sdks"

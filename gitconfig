@@ -8,6 +8,7 @@
 [push]
 	# not supported in git 1.7.x
 	#default = simple
+	default = current
 [alias]
 	st = status -sb
 	co = checkout

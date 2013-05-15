@@ -2,6 +2,7 @@
 [include]
 	path = .gitconfig-user
 	path = .gitconfig-github
+  path = .gitconfig.host
 [color]
 	ui = true
 [push]

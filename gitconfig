@@ -20,3 +20,4 @@
 	unalias = "!f() { git config --global --unset alias.$1; }; f"
 	pf = push --force
 	this = diff --staged
+	rv = remote -v

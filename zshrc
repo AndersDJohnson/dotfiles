@@ -2,6 +2,16 @@
 
 SHELLRC=".zshrc"
 
+function src () {
+  source ~/.zshrc
+}
+
+###
+# shell options
+###
+# dotglob lets glob match dotfiles
+setopt dotglob
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -36,14 +46,18 @@ export UPDATE_ZSH_DAYS=13
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github node npm coffee cake vundle screen jake-node heroku)
+
+# per-host
+if [ -f ~/.zshrc.host ]; then
+    source ~/.zshrc.host
+fi
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 # Autocorrect exceptions
-alias vim='nocorrect vim '
+#alias vim='nocorrect vim '
 
 # common shell config
 if [ -f ~/.commonshrc ]; then

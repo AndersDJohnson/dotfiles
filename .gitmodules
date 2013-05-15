@@ -6,4 +6,4 @@
 	url = git://github.com/robbyrussell/oh-my-zsh.git
 [submodule "z"]
 	path = z
-	url = https://github.com/rupa/z
+	url = https://github.com/adjohnson916/z.git

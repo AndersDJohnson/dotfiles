@@ -5,7 +5,7 @@ if [ -d ${HOME}/bin ]; then
 	PATH=${HOME}/bin:${PATH}
 fi
 
-export EDITOR=`which vim`
+export EDITOR="vim"
 
 # set MAIL environment variable
 MAIL=/var/spool/mail/anders && export MAIL

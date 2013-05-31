@@ -23,3 +23,7 @@
 	pf = push --force
 	this = diff --staged
 	rv = remote -v
+	pu = "!git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+	au = add -u
+	cm = commit
+	can = commit --amend --no-edit

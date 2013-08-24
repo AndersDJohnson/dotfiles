@@ -1,5 +1,7 @@
 # .zshrc zsh shell configuration
 
+source ~/.profile
+
 SHELLRC=".zshrc"
 
 function src () {

@@ -24,3 +24,5 @@ export ORACLE_HOME=/home/anders/app/anders/product/11.2.0/dbhome_1
 export ORACLE_SID=xe
 
 alias closure="java -jar ~/app/closure-compiler/compiler.jar"
+
+export NODE_PATH="$NODE_PATH:$(npm root -g)"

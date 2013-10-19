@@ -1,2 +1,4 @@
 
-plugins=(git zsh-syntax-highlighting grunt)
+#plugins=(git zsh-syntax-highlighting grunt)
+#plugins=(git grunt)
+plugins=(git)

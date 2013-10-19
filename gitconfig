@@ -13,11 +13,11 @@
 	st = status -sb
 	co = checkout
 	br = branch
-	l = log --pretty=oneline --stat --decorate
-	la = !git config -l | grep alias | cut -c 7-
+	lg = log --pretty=oneline --stat --decorate
 	fixup = commit --amend --no-edit
 	reword = commit --amend
 	last = diff --cached HEAD^
+	aliases = "!git config -l | grep alias | cut -c 7-"
 	alias = "!f() { git config --global alias.$1 \"$2\"; }; f"
 	unalias = "!f() { git config --global --unset alias.$1; }; f"
 	pf = push --force
@@ -27,3 +27,5 @@
 	au = add -u
 	cm = commit
 	can = commit --amend --no-edit
+	conflicts = diff --name-only --diff-filter=U
+	unadd = reset HEAD

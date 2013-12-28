@@ -61,6 +61,7 @@ source $ZSH/oh-my-zsh.sh
 # Autocorrect exceptions
 #alias vim='nocorrect vim '
 alias git='nocorrect git '
+alias derby='nocorrect derby '
 
 # common shell config
 if [ -f ~/.commonshrc ]; then

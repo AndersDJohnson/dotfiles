@@ -49,6 +49,11 @@ if command -v direnv > /dev/null 2>&1; then
 	fi
 fi
 
+# less source highlighting
+# http://blog.tersmitten.nl/how-to-enable-syntax-highlighting-in-less.html
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
+
 # z ( https://github.com/rupa/z )
 source ~/.dotfiles/z/z.sh
 

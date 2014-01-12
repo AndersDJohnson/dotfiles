@@ -52,7 +52,7 @@ fi
 # less source highlighting
 # http://blog.tersmitten.nl/how-to-enable-syntax-highlighting-in-less.html
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
-export LESS=' -R '
+export LESS=' --RAW-CONTROL-CHARS --LINE-NUMBERS --HILITE-UNREAD '
 
 # z ( https://github.com/rupa/z )
 source ~/.dotfiles/z/z.sh

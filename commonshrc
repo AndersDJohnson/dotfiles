@@ -54,6 +54,14 @@ fi
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' --RAW-CONTROL-CHARS --LINE-NUMBERS --HILITE-UNREAD '
 
+# larger bash history (allow 32^3 entries)
+export HISTSIZE=32768
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoredups
+
+# timestamps for bash history. www.debian-administration.org/users/rossen/weblog/1
+HISTTIMEFORMAT='%F %T '
+export HISTTIMEFORMAT
+
 # z ( https://github.com/rupa/z )
 source ~/.dotfiles/z/z.sh
-

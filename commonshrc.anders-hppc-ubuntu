@@ -25,7 +25,9 @@ export ORACLE_SID=xe
 
 alias closure="java -jar ~/app/closure-compiler/compiler.jar"
 
-export NODE_PATH="$NODE_PATH:$(npm root -g)"
+if type "npm" > /dev/null; then
+  export NODE_PATH="$NODE_PATH:$(npm root -g)"
+fi
 
 [[ -s /home/anders/.nvm/nvm.sh ]] && source /home/anders/.nvm/nvm.sh # This loads NVM
 

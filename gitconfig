@@ -22,6 +22,7 @@
 	unalias = "!f() { git config --global --unset alias.$1; }; f"
 	pf = push --force
 	this = diff --staged
+	staged = diff --staged
 	rv = remote -v
 	pu = "!git fetch origin -v; git fetch upstream -v; git merge upstream/master"
 	au = add -u

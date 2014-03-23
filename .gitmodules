@@ -7,3 +7,6 @@
 [submodule "z"]
 	path = z
 	url = https://github.com/adjohnson916/z.git
+[submodule "gnome-terminal-colors-solarized"]
+	path = gnome-terminal-colors-solarized
+	url = https://github.com/sigurdga/gnome-terminal-colors-solarized

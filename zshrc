@@ -63,6 +63,8 @@ source $ZSH/oh-my-zsh.sh
 alias git='nocorrect git '
 alias derby='nocorrect derby '
 
+eval `dircolors ~/.dotfiles/dircolors-solarized/dircolors.ansi-dark`
+
 # common shell config
 if [ -f ~/.commonshrc ]; then
     source ~/.commonshrc

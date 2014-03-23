@@ -1,4 +1,4 @@
 [github]
-	user = AndersDJohnson
-	token = TOKEN
-	password = "PASSWORD"
+	user = "${GITHUB_USER}"
+	token = "${GITHUB_TOKEN}"
+	password = "${GITHUB_PASSWORD}"

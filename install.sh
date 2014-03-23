@@ -2,6 +2,21 @@
 
 BASE=$(dirname $(readlink -f $0))
 
+# $1 = filename
+template() {
+  echo "$(eval "echo \"$(cat "$1")\"")"
+}
+
+## variables
+
+GITHUB_USER="AndersDJohnson"
+GIT_NAME="Anders D. Johnson"
+GIT_EMAIL="AndersDJohnson@gmail.com"
+read -p "GitHub token: " GITHUB_TOKEN
+read -p "GitHub password: " GITHUB_PASSWORD
+
+## run
+
 cd "$BASE"
 
 git submodule update --init
@@ -18,6 +33,7 @@ ln -sf .dotfiles/commonshrc ~/.commonshrc
 ln -sf .dotfiles/tmux.conf ~/.tmux.conf
 
 ln -sf .dotfiles/gitconfig ~/.gitconfig
-ln -sf .dotfiles/gitconfig-user ~/.gitconfig-user
-ln -sf .dotfiles/gitconfig-github ~/.gitconfig-github
-
+#ln -sf .dotfiles/gitconfig-user ~/.gitconfig-user
+#ln -sf .dotfiles/gitconfig-github ~/.gitconfig-github
+template "gitconfig-github" > ~/.gitconfig-github
+template "gitconfig-user" > ~/.gitconfig-user

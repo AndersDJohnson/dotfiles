@@ -30,3 +30,4 @@
 	can = commit --amend --no-edit
 	conflicts = diff --name-only --diff-filter=U
 	unadd = reset HEAD
+	cl = clone

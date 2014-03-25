@@ -37,3 +37,8 @@ ln -sf .dotfiles/gitconfig ~/.gitconfig
 #ln -sf .dotfiles/gitconfig-github ~/.gitconfig-github
 template "gitconfig-github" > ~/.gitconfig-github
 template "gitconfig-user" > ~/.gitconfig-user
+
+# git-extra install
+cd git-extras
+sudo make install
+

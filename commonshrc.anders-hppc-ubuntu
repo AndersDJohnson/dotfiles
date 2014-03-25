@@ -31,3 +31,6 @@ fi
 
 [[ -s /home/anders/.nvm/nvm.sh ]] && source /home/anders/.nvm/nvm.sh # This loads NVM
 
+# enable npm completion
+source <(npm completion)
+

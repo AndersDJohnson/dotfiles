@@ -13,3 +13,6 @@
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized
+[submodule "git-extras"]
+	path = git-extras
+	url = https://github.com/visionmedia/git-extras.git

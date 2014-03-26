@@ -16,6 +16,3 @@
 [submodule "git-extras"]
 	path = git-extras
 	url = https://github.com/visionmedia/git-extras.git
-[submodule "direnv"]
-	path = direnv
-	url = https://github.com/zimbatm/direnv

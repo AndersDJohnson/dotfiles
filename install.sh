@@ -11,7 +11,7 @@ template() {
 
 GITHUB_USER="AndersDJohnson"
 GIT_NAME="Anders D. Johnson"
-GIT_EMAIL="AndersDJohnson@gmail.com"
+read -p "Git email: " GIT_EMAIL
 read -p "GitHub token: " GITHUB_TOKEN
 read -p "GitHub password: " GITHUB_PASSWORD
 

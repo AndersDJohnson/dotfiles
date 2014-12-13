@@ -1,4 +1,4 @@
-#$BASE/bi$BASE/bash
+#!/usr/bin/env bash
 
 BASE=$(dirname $(readlink -f $0))
 

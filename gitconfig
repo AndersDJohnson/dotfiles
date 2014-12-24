@@ -14,7 +14,8 @@
 	co = checkout
 	br = branch
 	lg = log --pretty=oneline --stat --decorate
-	fixup = commit --amend --no-edit
+	fixup    = commit --amend --no-edit
+	recommit = commit --amend --no-edit
 	reword = commit --amend
 	last = diff --cached HEAD^
 	aliases = "!git config -l | grep alias | cut -c 7-"

@@ -9,11 +9,6 @@ template() {
 
 ## variables
 
-GITHUB_USER="AndersDJohnson"
-GIT_NAME="Anders D. Johnson"
-read -p "Git email: " GIT_EMAIL
-read -p "GitHub token: " GITHUB_TOKEN
-read -p "GitHub password: " GITHUB_PASSWORD
 
 ## run
 
@@ -32,11 +27,10 @@ ln -sf .dotfiles/commonshrc ~/.commonshrc
 
 ln -sf .dotfiles/tmux.conf ~/.tmux.conf
 
-ln -sf .dotfiles/gitconfig ~/.gitconfig
-#ln -sf .dotfiles/gitconfig-user ~/.gitconfig-user
-#ln -sf .dotfiles/gitconfig-github ~/.gitconfig-github
-template "gitconfig-github" > ~/.gitconfig-github
-template "gitconfig-user" > ~/.gitconfig-user
+# install gitconfig
+cd gitconfig
+./install.sh
+cd "$BASE"
 
 # git-extra install
 cd git-extras

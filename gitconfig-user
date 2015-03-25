@@ -1,3 +1,0 @@
-[user]
-	name = "${GIT_NAME}"
-	email = "${GIT_EMAIL}"

@@ -16,3 +16,6 @@
 [submodule "git-extras"]
 	path = git-extras
 	url = https://github.com/visionmedia/git-extras.git
+[submodule "gitconfig"]
+	path = gitconfig
+	url = https://github.com/adjohnson916/gitconfig.git

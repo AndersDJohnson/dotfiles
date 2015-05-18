@@ -19,3 +19,6 @@
 [submodule "gitconfig"]
 	path = gitconfig
 	url = https://github.com/adjohnson916/gitconfig.git
+[submodule ".vagrant.d"]
+	path = .vagrant.d
+	url = git@github.com:adjohnson916/.vagrant.d.git

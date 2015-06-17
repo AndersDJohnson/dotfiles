@@ -7,7 +7,7 @@ Installation
 ------------
 
 1. Clone repository into a `$HOME/.dotfiles` directory:
-   * `git clone git://github.com/AndersDJohnson/dotfiles.git ~/.dotfiles`
+   * `git clone https://github.com/AndersDJohnson/dotfiles.git ~/.dotfiles`
 
 2. (optional) Fetch submodules:
    * `git submodule init`

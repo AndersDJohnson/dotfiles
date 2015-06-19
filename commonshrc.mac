@@ -1,0 +1,8 @@
+# common configurations for some shells on mac (bash, zsh, etc.)
+
+export EDITOR=vim
+
+# brew install coreutils
+export READLINK=greadlink
+alias readlink=$READLINK
+

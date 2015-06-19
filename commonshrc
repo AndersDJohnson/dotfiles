@@ -1,5 +1,9 @@
 # common configurations for some shells (bash, zsh, etc.)
 
+export BASE_DOTFILES=~/.dotfiles
+
+export READLINK=readlink
+
 # per-host configurations
 
 if [ -f ~/.commonshrc.host ]; then

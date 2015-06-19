@@ -10,6 +10,13 @@ if [ -f ~/.commonshrc.host ]; then
   source ~/.commonshrc.host
 fi
 
+HOSTNAME=$(hostname)
+
+HOSTNAMECOMMONSHRC=~/.dotfiles/commonshrc.${HOSTNAME}
+if [ -f "$HOSTNAMECOMMONSHRC" ]; then
+  source "$HOSTNAMECOMMONSHRC"
+fi
+
 # add user bin directory to PATH
 if [ -d ${HOME}/bin ]; then
 	PATH=${HOME}/bin:${PATH}

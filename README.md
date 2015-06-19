@@ -3,7 +3,7 @@
 [dotfiles][projecturl]
 ======================
 
-Installation
+Install
 ------------
 
 1. Clone repository into a `~/.dotfiles` directory:

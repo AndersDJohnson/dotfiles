@@ -1,0 +1,8 @@
+# https://gist.github.com/gregorynicholas/1812027
+
+set completion-ignore-case on
+set expand-tilde on
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+
+set -o vi

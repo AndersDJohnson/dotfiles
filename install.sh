@@ -21,9 +21,11 @@ ln -sf .dotfiles/zshrc ~/.zshrc
 ln -sf .dotfiles/oh-my-zsh ~/.oh-my-zsh
 
 ln -sf .dotfiles/bashrc ~/.bashrc
-ln -sf .dotfiles/bcrc ~/.bcrc
 ln -sf .dotfiles/bash_aliases ~/.bash_aliases
 ln -sf .dotfiles/commonshrc ~/.commonshrc
+ln -sf .dotfiles/inputrc ~/.inputrc
+
+ln -sf .dotfiles/bcrc ~/.bcrc
 
 ln -sf .dotfiles/tmux.conf ~/.tmux.conf
 

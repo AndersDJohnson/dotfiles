@@ -6,3 +6,4 @@ set show-all-if-ambiguous on
 set show-all-if-unmodified on
 
 set -o vi
+set editing-mode vi

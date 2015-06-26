@@ -1,14 +1,6 @@
 #!/usr/bin/env bash
 
-BASE=$(dirname $(readlink -f $0))
-
-# $1 = filename
-template() {
-  echo "$(eval "echo \"$(cat "$1")\"")"
-}
-
-## variables
-
+BASE=~/.dotfiles
 
 ## run
 
@@ -16,18 +8,17 @@ cd "$BASE"
 
 git submodule update --init
 
-ln -sf "$BASE" ~/.dotfiles
-ln -sf .dotfiles/zshrc ~/.zshrc
-ln -sf .dotfiles/oh-my-zsh ~/.oh-my-zsh
+ln -sf $BASE/zshrc ~/.zshrc
+ln -sf $BASE/oh-my-zsh ~/.oh-my-zsh
 
-ln -sf .dotfiles/bashrc ~/.bashrc
-ln -sf .dotfiles/bash_aliases ~/.bash_aliases
-ln -sf .dotfiles/commonshrc ~/.commonshrc
-ln -sf .dotfiles/inputrc ~/.inputrc
+ln -sf $BASE/bashrc ~/.bashrc
+ln -sf $BASE/bash_aliases ~/.bash_aliases
+ln -sf $BASE/commonshrc ~/.commonshrc
+ln -sf $BASE/inputrc ~/.inputrc
 
-ln -sf .dotfiles/bcrc ~/.bcrc
+ln -sf $BASE/bcrc ~/.bcrc
 
-ln -sf .dotfiles/tmux.conf ~/.tmux.conf
+ln -sf $BASE/tmux.conf ~/.tmux.conf
 
 # install gitconfig
 cd gitconfig

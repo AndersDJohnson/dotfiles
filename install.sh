@@ -24,6 +24,9 @@ echo "Done."
 
 echo "Installing submodules..."
 
+export INSTALLING=true
+source ~/.bashrc
+
 echo "Installing gitconfig..."
 
 cd gitconfig

@@ -12,7 +12,11 @@ fi
 
 HOSTNAME=$(hostname)
 
-HOSTNAMECOMMONSHRC=~/.dotfiles/commonshrc.${HOSTNAME}
+
+HOSTNAMECOMMONSHRC=$BASE_DOTFILES/commonshrc.$HOSTNAME
+if [ -n "$INSTALLING" ]; then
+  echo "commonshrc looking for \"${HOSTNAMECOMMONSHRC}\"."
+fi
 if [ -f "$HOSTNAMECOMMONSHRC" ]; then
   source "$HOSTNAMECOMMONSHRC"
 fi

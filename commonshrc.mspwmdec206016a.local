@@ -1,0 +1,4 @@
+
+COMMONSHRC_MAC="${BASE_DOTFILES}/commonshrc.mac"
+
+source "$COMMONSHRC_MAC"

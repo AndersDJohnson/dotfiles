@@ -62,7 +62,11 @@ fi
 
 # less source highlighting
 # http://blog.tersmitten.nl/how-to-enable-syntax-highlighting-in-less.html
-export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+LESSHILITE=/usr/share/source-highlight/src-hilite-lesspipe.sh
+if [ -f $LESSHILITE ]; then
+  export LESSOPEN="| $LESSHILITE %s"
+fi
+
 export LESS=' --RAW-CONTROL-CHARS --LINE-NUMBERS --HILITE-UNREAD '
 
 # larger bash history (allow 32^3 entries)

@@ -79,4 +79,8 @@ HISTTIMEFORMAT='%F %T '
 export HISTTIMEFORMAT
 
 # z ( https://github.com/rupa/z )
-source ~/.dotfiles/z/z.sh
+ZFILE=$BASE_DOTFILES/z/z.sh
+if [ -f $ZFILE ]; then
+  source $ZFILE
+fi
+

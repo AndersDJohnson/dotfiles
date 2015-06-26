@@ -35,7 +35,7 @@ cd "$BASE"
 
 echo "Done."
 
-echo "Installing git-extra..."
+echo "Installing git-extras..."
 
 cd git-extras
 sudo make install

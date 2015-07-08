@@ -2,6 +2,7 @@ BREW_APPS=(\
 coreutils \
 caskroom/cask/brew-cask \
 hub \
+node \
 )
 CASK_APPS=(\
 google-chrome \

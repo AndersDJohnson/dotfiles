@@ -7,6 +7,7 @@ node \
 CASK_APPS=(\
 google-chrome \
 sublime-text \
+google-drive \
 )
 
 for BREW_APP in "${BREW_APPS[@]}"; do

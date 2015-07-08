@@ -1,13 +1,14 @@
+
+
+# Install Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+
 BREW_APPS=(\
 coreutils \
 caskroom/cask/brew-cask \
 hub \
 node \
-)
-CASK_APPS=(\
-google-chrome \
-sublime-text \
-google-drive \
 )
 
 for BREW_APP in "${BREW_APPS[@]}"; do
@@ -15,6 +16,17 @@ for BREW_APP in "${BREW_APPS[@]}"; do
   brew install --force $BREW_APP
   echo "...installed \"$BREW_APP\"."
 done
+
+
+brew tap caskroom/versions
+brew tap AndersDJohnson/versions # AndersDJohnson
+
+CASK_APPS=(\
+google-chrome \
+sublime-text \
+google-drive \
+intellij-idea14-0
+)
 
 for CASK_APP in "${CASK_APPS[@]}"; do
   echo "Installing \"$CASK_APP\"..."

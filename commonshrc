@@ -21,6 +21,8 @@ if [ -f "$HOSTNAMECOMMONSHRC" ]; then
   source "$HOSTNAMECOMMONSHRC"
 fi
 
+alias x=exit
+
 # add user bin directory to PATH
 if [ -d ${HOME}/bin ]; then
 	PATH=${HOME}/bin:${PATH}

@@ -22,3 +22,6 @@
 [submodule ".vagrant.d"]
 	path = .vagrant.d
 	url = https://github.com/adjohnson916/.vagrant.d.git
+[submodule "os-detect.sh"]
+	path = os-detect.sh
+	url = https://github.com/adjohnson916/os-detect.sh.git

@@ -26,7 +26,8 @@ google-chrome \
 sublime-text \
 google-drive \
 java \
-intellij-idea14_0
+intellij-idea14_0 \
+diffmerge \
 )
 
 for CASK_APP in "${CASK_APPS[@]}"; do

@@ -25,7 +25,8 @@ CASK_APPS=(\
 google-chrome \
 sublime-text \
 google-drive \
-intellij-idea14-0
+java \
+intellij-idea14_0
 )
 
 for CASK_APP in "${CASK_APPS[@]}"; do

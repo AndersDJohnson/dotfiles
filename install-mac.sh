@@ -10,6 +10,7 @@ caskroom/cask/brew-cask \
 hub \
 node \
 tree \
+bash-completion \
 )
 
 for BREW_APP in "${BREW_APPS[@]}"; do

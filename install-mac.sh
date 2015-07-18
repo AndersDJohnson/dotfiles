@@ -11,6 +11,7 @@ hub \
 node \
 tree \
 bash-completion \
+google-app-engine \
 )
 
 for BREW_APP in "${BREW_APPS[@]}"; do

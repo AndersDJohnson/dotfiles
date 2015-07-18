@@ -90,7 +90,7 @@ if [ -f $ZFILE ]; then
   source $ZFILE
 fi
 
-source ./os-detect.sh/os-detect.sh
+source $BASE_DOTFILES/os-detect.sh/os-detect.sh
 OS_DETECT=$(os-detect)
 export OS_DETECT
 

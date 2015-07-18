@@ -31,6 +31,7 @@ java \
 intellij-idea14_0 \
 diffmerge \
 adium \
+skype \
 )
 
 for CASK_APP in "${CASK_APPS[@]}"; do

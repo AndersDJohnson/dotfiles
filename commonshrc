@@ -90,9 +90,12 @@ if [ -f $ZFILE ]; then
   source $ZFILE
 fi
 
-source $BASE_DOTFILES/os-detect.sh/os-detect.sh
-OS_DETECT=$(os-detect)
-export OS_DETECT
+OS_DETECT_SCRIPT="$BASE_DOTFILES/os_detect.sh/os_detect.sh"
+if [ -f "$OS_DETECT_SCRIPT" ]; then
+  source "${OS_DETECT_SCRIPT}"
+  OS_DETECT=$(os_detect)
+  export OS_DETECT
+fi
 
 # From Heroku Toolbelt
 HEROKU_BIN="/usr/local/heroku/bin"

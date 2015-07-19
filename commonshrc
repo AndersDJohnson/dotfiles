@@ -94,3 +94,9 @@ source $BASE_DOTFILES/os-detect.sh/os-detect.sh
 OS_DETECT=$(os-detect)
 export OS_DETECT
 
+# From Heroku Toolbelt
+HEROKU_BIN="/usr/local/heroku/bin"
+if [ -d "${HEROKU_BIN}" ]; then
+  export PATH="${HEROKU_BIN}:$PATH"
+fi
+

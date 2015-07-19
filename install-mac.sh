@@ -31,6 +31,7 @@ google-drive \
 java \
 intellij-idea14_0 \
 diffmerge \
+heroku-toolbelt \
 adium \
 skype \
 )

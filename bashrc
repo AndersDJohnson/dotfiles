@@ -146,6 +146,12 @@ if [ -f /etc/profile.d/autojump.bash ]; then
     . /etc/profile.d/autojump.bash
 fi
 
+if [ -x brew ]; then
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+  fi
+fi
+
 # common shell config
 if [ -f ~/.commonshrc ]; then
     . ~/.commonshrc

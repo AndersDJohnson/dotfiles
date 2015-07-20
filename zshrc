@@ -16,6 +16,9 @@ function src () {
 # dotglob lets glob match dotfiles
 setopt dotglob
 
+# Vi/vim mode
+bindkey -v
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 

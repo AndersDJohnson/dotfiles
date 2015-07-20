@@ -16,9 +16,6 @@ function src () {
 # dotglob lets glob match dotfiles
 setopt dotglob
 
-# Vi/vim mode
-bindkey -v
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -53,6 +50,10 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+
+plugins=(\
+vi-mode \
+)
 
 # per-host
 if [ -f ~/.zshrc.host ]; then

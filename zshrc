@@ -1,6 +1,8 @@
 # .zshrc zsh shell configuration
 
-source ~/.profile
+if [ -f ~/.profile ]; then
+  source ~/.profile
+fi
 
 SHELLRC=".zshrc"
 
@@ -63,7 +65,9 @@ source $ZSH/oh-my-zsh.sh
 alias git='nocorrect git '
 alias derby='nocorrect derby '
 
-eval `dircolors ~/.dotfiles/dircolors-solarized/dircolors.ansi-dark`
+if [ -x dircolors ]; then
+  eval `dircolors ~/.dotfiles/dircolors-solarized/dircolors.ansi-dark`
+fi
 
 # common shell config
 if [ -f ~/.commonshrc ]; then

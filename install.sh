@@ -6,7 +6,7 @@ BASE=~/.dotfiles
 
 cd "$BASE"
 
-git submodule update --init
+git submodule update --init --recursive
 
 echo "Linking..."
 

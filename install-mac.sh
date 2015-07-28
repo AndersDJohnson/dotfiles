@@ -35,6 +35,7 @@ diffmerge \
 heroku-toolbelt \
 adium \
 skype \
+virtualbox \
 )
 
 for CASK_APP in "${CASK_APPS[@]}"; do

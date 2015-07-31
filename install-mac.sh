@@ -13,6 +13,7 @@ tree \
 bash-completion \
 google-app-engine \
 zsh \
+groovy \
 )
 
 for BREW_APP in "${BREW_APPS[@]}"; do

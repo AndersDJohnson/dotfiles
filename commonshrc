@@ -103,3 +103,7 @@ if [ -d "${HEROKU_BIN}" ]; then
   export PATH="${HEROKU_BIN}:$PATH"
 fi
 
+# nvm
+export NVM_DIR="/Users/anders/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+

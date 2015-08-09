@@ -37,6 +37,7 @@ heroku-toolbelt \
 adium \
 skype \
 virtualbox \
+gpgtools \
 )
 
 for CASK_APP in "${CASK_APPS[@]}"; do

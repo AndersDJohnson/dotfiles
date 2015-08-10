@@ -41,3 +41,6 @@ Some configuration files will detect and include host-specific configuration fil
 For example, `commonshrc` looks for `~/.commonshrc.host`, which I set up as a symlink to the specific commonshrc configuration file for that host in version control.
 Or, you can just name file based on hostname, e.g. if your hostname is `home-computer`, then put a file named `~/.commonshrc.home-computer`.
 
+## References
+* [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+* [paulirish/dotfiles](https://github.com/paulirish/dotfiles)

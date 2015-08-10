@@ -9,18 +9,26 @@ Install
 1. Clone repository into a `~/.dotfiles` directory:
    * `git clone https://github.com/AndersDJohnson/dotfiles.git ~/.dotfiles`
 
-2. (optional) Fetch submodules:
-   * `git submodule init`
-   * `git submodule update`
+### Automatic
 
-3. (optional) Create symlinks to desired configs:
+1. Run the `install.sh` script.
+
+2. (optional) On Macs, then also run the `install-mac.sh` script.
+
+### Manual
+1. (optional) Fetch submodules:
+   * `git submodule update --init --recursive`
+
+2. (optional) Create symlinks to desired configs:
    * `ln -s ~/.dotfiles/vim ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc`
    * `ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf`
    * `ln -s ~/.dotfiles/bashrc ~/.bashrc`
    * `ln -s ~/.dotfiles/bash_profile ~/.bash_profile`
    * `ln -s ~/.dotfiles/bash_aliases ~/.bash_aliases`
    * `ln -s ~/.dotfiles/screenrc ~/.screenrc`
+   * etc.
 
+3. (optional) etc.
 
 Notes
 -----
@@ -28,11 +36,10 @@ Notes
 ### Submodules
 
 #### [AndersDJohnson/dotvim](http://github.com/AndersDJohnson/dotvim)
+* See [AndersDJohnson/dotvim#install](https://github.com/AndersDJohnson/dotvim#install).
 
 #### [AndersDJohnson/gitconfig](http://github.com/AndersDJohnson/gitconfig)
-
-1. Install:
-  * `./gitconfig/install.sh`
+* See [AndersDJohnson/gitconfig#install](https://github.com/AndersDJohnson/gitconfig#install).
 
 
 ### Per-host configurations

@@ -19,6 +19,7 @@ ln -sf $BASE/commonshrc ~/.commonshrc
 ln -sf $BASE/inputrc ~/.inputrc
 ln -sf $BASE/bcrc ~/.bcrc
 ln -sf $BASE/tmux.conf ~/.tmux.conf
+ln -sf $BASE/gemrc ~/.gemrc
 
 echo "Done."
 

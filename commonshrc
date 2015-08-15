@@ -107,3 +107,9 @@ fi
 export NVM_DIR="/Users/anders/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# ruby gem user bin path
+# http://guides.rubygems.org/faqs/
+if which ruby >/dev/null && which gem >/dev/null; then
+  PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+

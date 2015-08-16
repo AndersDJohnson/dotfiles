@@ -14,6 +14,7 @@ bash-completion \
 google-app-engine \
 zsh \
 groovy \
+wget \
 )
 
 for BREW_APP in "${BREW_APPS[@]}"; do

@@ -15,6 +15,7 @@ google-app-engine \
 zsh \
 groovy \
 wget \
+watch \
 )
 
 for BREW_APP in "${BREW_APPS[@]}"; do

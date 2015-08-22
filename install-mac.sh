@@ -39,6 +39,7 @@ adium \
 skype \
 virtualbox \
 gpgtools \
+firefox \
 )
 
 for CASK_APP in "${CASK_APPS[@]}"; do

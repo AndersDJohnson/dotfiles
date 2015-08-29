@@ -16,6 +16,7 @@ zsh \
 groovy \
 wget \
 watch \
+michaeldfallen/formula/git-radar \
 )
 
 for BREW_APP in "${BREW_APPS[@]}"; do

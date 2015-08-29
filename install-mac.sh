@@ -17,6 +17,7 @@ groovy \
 wget \
 watch \
 michaeldfallen/formula/git-radar \
+maven \
 )
 
 for BREW_APP in "${BREW_APPS[@]}"; do

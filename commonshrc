@@ -24,8 +24,15 @@ fi
 alias x=exit
 
 # add user bin directory to PATH
-if [ -d ${HOME}/bin ]; then
-	PATH=${HOME}/bin:${PATH}
+HOME_BIN="${HOME}/bin"
+if [ -d "${HOME_BIN}" ]; then
+  export PATH="${HOME_BIN}:${PATH}"
+fi
+
+# add user .bin directory to PATH
+HOME_DOTBIN="${HOME}/.bin"
+if [ -d "${HOME_DOTBIN}" ]; then
+  export PATH="${HOME_DOTBIN}:${PATH}"
 fi
 
 # add npm local bin to path

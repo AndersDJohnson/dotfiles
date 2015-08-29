@@ -113,3 +113,8 @@ if which ruby >/dev/null && which gem >/dev/null; then
   PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
 
+MAVEN_BIN="${HOME}/.mvbn/bin"
+if [ -d "${MAVEN_BIN}" ]; then
+  export PATH="${MAVEN_BIN}:$PATH"
+fi
+

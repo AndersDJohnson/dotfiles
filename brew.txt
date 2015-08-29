@@ -1,0 +1,13 @@
+coreutils
+caskroom/cask/brew-cask
+hub
+node
+tree
+bash-completion
+google-app-engine
+zsh
+groovy
+wget
+watch
+michaeldfallen/formula/git-radar
+maven

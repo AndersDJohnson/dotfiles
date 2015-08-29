@@ -4,23 +4,9 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 
-BREW_APPS=(\
-coreutils \
-caskroom/cask/brew-cask \
-hub \
-node \
-tree \
-bash-completion \
-google-app-engine \
-zsh \
-groovy \
-wget \
-watch \
-michaeldfallen/formula/git-radar \
-maven \
-)
+BREW_APPS="$(cat brew.txt)"
 
-for BREW_APP in "${BREW_APPS[@]}"; do
+for BREW_APP in ${BREW_APPS}; do
   echo "Installing \"$BREW_APP\"..."
   brew install --force $BREW_APP
   echo "...installed \"$BREW_APP\"."
@@ -30,22 +16,9 @@ done
 brew tap caskroom/versions
 brew tap AndersDJohnson/versions # AndersDJohnson
 
-CASK_APPS=(\
-google-chrome \
-sublime-text \
-google-drive \
-java \
-intellij-idea14_0 \
-diffmerge \
-heroku-toolbelt \
-adium \
-skype \
-virtualbox \
-gpgtools \
-firefox \
-)
+CASK_APPS="$(cat brew-cask.txt)"
 
-for CASK_APP in "${CASK_APPS[@]}"; do
+for CASK_APP in ${CASK_APPS}; do
   echo "Installing \"$CASK_APP\"..."
   brew cask install --force $CASK_APP
   echo "...installed \"$CASK_APP\"."

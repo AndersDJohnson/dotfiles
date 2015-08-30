@@ -125,3 +125,8 @@ if [ -d "${MAVEN_BIN}" ]; then
   export PATH="${MAVEN_BIN}:$PATH"
 fi
 
+GITCONFIG_SH="${BASE_DOTFILES}/gitconfig/shell.sh"
+if [ -f "${GITCONFIG_SH}" ]; then
+  source "${GITCONFIG_SH}"
+fi
+

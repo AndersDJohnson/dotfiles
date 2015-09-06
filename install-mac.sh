@@ -3,6 +3,8 @@
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew tap homebrew/x11
+
 brew update
 
 BREW_APPS="$(cat brew.txt)"

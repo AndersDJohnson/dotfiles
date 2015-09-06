@@ -15,9 +15,10 @@ for BREW_APP in ${BREW_APPS}; do
   echo "...installed \"$BREW_APP\"."
 done
 
-
 brew tap caskroom/versions
 brew tap AndersDJohnson/versions # AndersDJohnson
+
+brew cask update
 
 CASK_APPS="$(cat brew-cask.txt)"
 

@@ -10,3 +10,4 @@ skype
 virtualbox
 gpgtools
 firefox
+gimp

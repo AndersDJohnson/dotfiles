@@ -6,3 +6,6 @@ export EDITOR=vim
 export READLINK=greadlink
 alias readlink=$READLINK
 
+# settings
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+

@@ -109,6 +109,11 @@ if [ -f "$OS_DETECT_SCRIPT" ]; then
   export OS_DETECT
 fi
 
+LSS_SCRIPT="$BASE_DOTFILES/lss.sh/lss.sh"
+if [ -f "$LSS_SCRIPT" ]; then
+  source "$LSS_SCRIPT" > /dev/null
+fi
+
 # From Heroku Toolbelt
 HEROKU_BIN="/usr/local/heroku/bin"
 if [ -d "${HEROKU_BIN}" ]; then

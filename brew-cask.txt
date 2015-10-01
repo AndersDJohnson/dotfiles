@@ -11,3 +11,4 @@ virtualbox
 gpgtools
 firefox
 gimp
+eclipse-platform

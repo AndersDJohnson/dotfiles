@@ -57,6 +57,11 @@ vi-mode \
 )
 
 # per-host
+_HOSTNAME=hostname
+HOSTRC="~/.dotfiles/zshrc.${_HOSTNAME}"
+if [ -f "$HOSTRC" ]; then
+    source "$HOSTRC"
+fi
 if [ -f ~/.zshrc.host ]; then
     source ~/.zshrc.host
 fi

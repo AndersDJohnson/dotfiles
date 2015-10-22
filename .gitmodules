@@ -25,3 +25,6 @@
 [submodule "os_detect.sh"]
 	path = os_detect.sh
 	url = https://github.com/adjohnson916/os_detect.sh.git
+[submodule "lss.sh"]
+	path = lss.sh
+	url = https://github.com/adjohnson916/lss.sh.git

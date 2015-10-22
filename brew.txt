@@ -12,3 +12,6 @@ wget
 watch
 michaeldfallen/formula/git-radar
 maven
+hardlink-osx
+gradle
+keepassx

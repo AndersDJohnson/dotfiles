@@ -52,6 +52,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 plugins=(\
+# Note: vi-mode is painfully slow on OSX Mavericks with the native Git
 vi-mode \
 )
 

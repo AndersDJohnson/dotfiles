@@ -16,3 +16,4 @@ hardlink-osx
 gradle
 keepassx
 httpie
+ack

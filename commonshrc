@@ -21,6 +21,12 @@ if [ -f "$HOSTNAMECOMMONSHRC" ]; then
   source "$HOSTNAMECOMMONSHRC"
 fi
 
+PRIVATECOMMONSHRC=$BASE_DOTFILES/commonshrc.private
+if [ -f "$PRIVATECOMMONSHRC" ]; then
+  source "$PRIVATECOMMONSHRC"
+fi
+
+
 alias x=exit
 
 # add user bin directory to PATH

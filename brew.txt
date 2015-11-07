@@ -1,6 +1,7 @@
 coreutils
 caskroom/cask/brew-cask
 git
+git-flow
 hub
 node
 tree

@@ -18,3 +18,4 @@ gradle
 keepassx
 httpie
 ack
+watchman

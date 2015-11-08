@@ -12,3 +12,4 @@ gpgtools
 firefox
 gimp
 eclipse-platform
+slack

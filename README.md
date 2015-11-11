@@ -6,6 +6,7 @@
 ## See Also
 
 * [AndersDJohnson/unix-notes](https://github.com/AndersDJohnson/unix-notes)
+* [AndersDJohnson/mac-notes](https://github.com/AndersDJohnson/mac-notes)
 
 
 Install

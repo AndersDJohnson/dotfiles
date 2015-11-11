@@ -19,3 +19,4 @@ keepassx
 httpie
 ack
 watchman
+kdiff3

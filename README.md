@@ -3,6 +3,11 @@
 [dotfiles][projecturl]
 ======================
 
+## See Also
+
+* [AndersDJohnson/unix-notes](https://github.com/AndersDJohnson/unix-notes)
+
+
 Install
 ------------
 

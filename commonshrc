@@ -149,3 +149,10 @@ fi
 # current directory in java classpath
 export CLASSPATH=".:$CLASSPATH"
 
+# open Sublime Text project in current directory
+if command -v subl > /dev/null 2>&1; then
+  function sublp () {
+    subl *.sublime-project
+  }
+fi
+

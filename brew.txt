@@ -21,3 +21,4 @@ ack
 watchman
 kdiff3
 jenv
+wireshark

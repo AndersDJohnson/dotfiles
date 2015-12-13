@@ -54,6 +54,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(\
 # Note: vi-mode is painfully slow on OSX Mavericks with the native Git
 vi-mode \
+dotenv \
 )
 
 # per-host

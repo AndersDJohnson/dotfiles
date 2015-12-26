@@ -24,3 +24,4 @@ jenv
 wireshark
 direnv
 go
+haskell-stack

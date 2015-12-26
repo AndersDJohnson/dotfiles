@@ -46,6 +46,16 @@ if [ -d "${USR_LOCAL_BIN}" ]; then
   export PATH="${USR_LOCAL_BIN}:${PATH}"
 fi
 
+# Go language env vars & path
+GOPATH_DIR="/usr/local/Cellar/go/1.5.1"
+if [ -d "${GOPATH_DIR}" ]; then
+  export GOPATH="${GOPATH_DIR}"
+  GOPATH_BIN="${GOPATH}/bin"
+  if [ -d "${GOPATH_BIN}" ]; then
+    export PATH="${GOPATH_BIN}:${PATH}"
+  fi
+fi
+
 # add npm local bin to path
 PATH="${PATH}:./node_modules/.bin"
 

@@ -25,3 +25,5 @@ wireshark
 direnv
 go
 haskell-stack
+ghc
+cabal-install

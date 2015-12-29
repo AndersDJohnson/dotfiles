@@ -27,3 +27,4 @@ go
 haskell-stack
 ghc
 cabal-install
+rename

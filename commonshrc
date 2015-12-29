@@ -176,3 +176,5 @@ if command -v jenv > /dev/null 2>&1; then
   eval "$(jenv init -)"
 fi
 
+# added by travis gem
+[ -f /Users/anders/.travis/travis.sh ] && source /Users/anders/.travis/travis.sh

@@ -29,6 +29,12 @@ fi
 
 alias x=exit
 
+# add dotfiles bin directory to PATH
+DOTFILES_BIN="${BASE_DOTFILES}/bin"
+if [ -d "${DOTFILES_BIN}" ]; then
+  export PATH="${DOTFILES_BIN}:${PATH}"
+fi
+
 # add user bin directory to PATH
 HOME_BIN="${HOME}/bin"
 if [ -d "${HOME_BIN}" ]; then

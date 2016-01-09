@@ -100,6 +100,15 @@ if command -v direnv > /dev/null 2>&1; then
 	fi
 fi
 
+# export environment variables from a file like Node.js's dotenv
+function exenv() {
+  [ -f ./.env ] && while read LINE; do
+    if [[ ! $LINE =~ [^[:space:]] ]] continue
+    LINE=`echo $LINE | sed -Ee 's/[ \t]*export[ \t]+//g'`
+    export $LINE
+  done < ./.env
+}
+
 # less source highlighting
 # http://blog.tersmitten.nl/how-to-enable-syntax-highlighting-in-less.html
 LESSHILITE=/usr/share/source-highlight/src-hilite-lesspipe.sh

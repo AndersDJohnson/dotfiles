@@ -54,3 +54,4 @@ watchman
 wget
 wireshark
 zsh
+thefuck

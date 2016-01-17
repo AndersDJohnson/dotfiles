@@ -121,7 +121,13 @@ export LESS=' --RAW-CONTROL-CHARS --LINE-NUMBERS --HILITE-UNREAD '
 # larger bash history (allow 32^3 entries)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
-export HISTCONTROL=ignoredups
+# don't put duplicate lines in the history. See bash(1) for more options
+# don't overwrite GNU Midnight Commander's setting of `ignorespace'.
+export HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
+# ... or force ignoredups and ignorespace
+export HISTCONTROL=ignoreboth
+
+
 
 # timestamps for bash history. www.debian-administration.org/users/rossen/weblog/1
 HISTTIMEFORMAT='%F %T '

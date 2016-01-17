@@ -9,5 +9,12 @@ alias readlink=$READLINK
 # settings
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-alias chrome="~/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+GOOGLE_CHROME_1="~/Applications/Google Chrome.app"
+GOOGLE_CHROME_2="/Applications/Google Chrome.app"
+if [ -d "$GOOGLE_CHROME_1" ]; then
+  GOOGLE_CHROME=$GOOGLE_CHROME_1
+elif [ -d "$GOOGLE_CHROME_2" ]; then
+  GOOGLE_CHROME=$GOOGLE_CHROME_2
+fi
+alias chrome="\"$GOOGLE_CHROME/Contents/MacOS/Google Chrome\""
 

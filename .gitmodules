@@ -19,8 +19,8 @@
 [submodule "gitconfig"]
 	path = gitconfig
 	url = https://github.com/adjohnson916/gitconfig.git
-[submodule ".vagrant.d"]
-	path = .vagrant.d
+[submodule "vagrant.d"]
+	path = vagrant.d
 	url = https://github.com/adjohnson916/.vagrant.d.git
 [submodule "os_detect.sh"]
 	path = os_detect.sh

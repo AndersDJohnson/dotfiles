@@ -81,6 +81,9 @@ alias phpunit--no-colors="phpunit --colors"
 
 alias mochac="mocha --compilers coffee:coffee-script"
 
+# start the ssh-agent in the background
+eval "$(ssh-agent -s)" > /dev/null
+
 # bc rc
 if [ -f "${HOME}/.bcrc" ]; then
 	export BC_ENV_ARGS=~/.bcrc
@@ -197,4 +200,3 @@ fi
 if command -v thefuck > /dev/null 2>&1; then
   eval "$(thefuck --alias)"
 fi
-

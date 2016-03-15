@@ -55,6 +55,10 @@ plugins=(\
 # Note: vi-mode is painfully slow on OSX Mavericks with the native Git
 vi-mode \
 dotenv \
+
+# OS X / Mac
+osx \
+terminalapp \
 )
 
 # per-host

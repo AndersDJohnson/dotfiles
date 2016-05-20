@@ -18,3 +18,5 @@ elif [ -d "$GOOGLE_CHROME_2" ]; then
 fi
 alias chrome="\"$GOOGLE_CHROME/Contents/MacOS/Google Chrome\""
 
+export PYTHONPATH="${PYTHONPATH}:/usr/local/Cellar/opencv/2.4.12_2/lib/python2.7/site-packages"
+

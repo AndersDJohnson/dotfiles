@@ -63,7 +63,7 @@ if [ -d "${GOPATH_DIR}" ]; then
 fi
 
 # add npm local bin to path
-PATH="${PATH}:./node_modules/.bin"
+PATH="./node_modules/.bin:${PATH}"
 
 export EDITOR="vim"
 

@@ -106,7 +106,9 @@ fi
 # export environment variables from a file like Node.js's dotenv
 function exenv() {
   [ -f ./.env ] && while read LINE; do
-    if [[ ! $LINE =~ [^[:space:]] ]] continue
+    if [[ ! $LINE =~ [^[:space:]] ]]; then
+        continue
+    fi    
     LINE=`echo $LINE | sed -Ee 's/[ \t]*export[ \t]+//g'`
     export $LINE
   done < ./.env

@@ -202,3 +202,10 @@ fi
 if command -v thefuck > /dev/null 2>&1; then
   eval "$(thefuck --alias)"
 fi
+
+function colorwdiff() {
+  wdiff -n \
+    -w $'\033[30;41m' -x $'\033[0m' \
+    -y $'\033[30;42m' -z $'\033[0m' $@
+}
+

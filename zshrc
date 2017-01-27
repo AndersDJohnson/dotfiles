@@ -56,6 +56,9 @@ plugins=(\
 vi-mode \
 dotenv \
 
+npm \
+git \
+
 # OS X / Mac
 osx \
 terminalapp \

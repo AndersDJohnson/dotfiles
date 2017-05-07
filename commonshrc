@@ -75,6 +75,8 @@ function noctrlchars () {
    perl -pe 's/\e([^\[\]]|\[.*?[a-zA-Z]|\].*?\a)//g' $@
 }
 
+alias g="git"
+
 # PHPUnit
 alias phpunit="phpunit --colors"
 alias phpunit--no-colors="phpunit --colors"

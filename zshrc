@@ -62,6 +62,8 @@ git \
 # OS X / Mac
 osx \
 terminalapp \
+
+zsh-autosuggestions \
 )
 
 # per-host

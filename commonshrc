@@ -77,6 +77,8 @@ function noctrlchars () {
 
 alias g="git"
 
+export NV="--no-verify"
+
 # PHPUnit
 alias phpunit="phpunit --colors"
 alias phpunit--no-colors="phpunit --colors"

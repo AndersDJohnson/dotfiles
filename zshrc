@@ -64,6 +64,7 @@ osx \
 terminalapp \
 
 zsh-autosuggestions \
+zsh-better-npm-completion \
 )
 
 # per-host

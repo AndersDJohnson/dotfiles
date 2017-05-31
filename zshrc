@@ -102,3 +102,6 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
+# SHIFT-TAB
+bindkey '^[[Z' reverse-menu-complete
+

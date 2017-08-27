@@ -12,6 +12,7 @@ d-bus
 direnv
 exif
 exiftool
+findutils
 gdbm
 geoip
 gettext
@@ -26,7 +27,6 @@ go
 google-app-engine
 gradle
 groovy
-findutils
 hardlink-osx
 haskell-stack
 httpie
@@ -49,10 +49,10 @@ qt
 readline
 rename
 squid
+thefuck
 tree
 watch
 watchman
 wget
 wireshark
 zsh
-thefuck

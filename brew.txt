@@ -26,6 +26,7 @@ go
 google-app-engine
 gradle
 groovy
+findutils
 hardlink-osx
 haskell-stack
 httpie

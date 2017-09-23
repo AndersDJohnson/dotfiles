@@ -4,10 +4,10 @@ if [ -f ~/.profile ]; then
   source ~/.profile
 fi
 
-SHELLRC=".zshrc"
+SHELLRC=~/.zshrc
 
 function src () {
-  source ~/.zshrc
+  source "$SHELLRC"
 }
 
 ###

@@ -65,6 +65,7 @@ terminalapp \
 
 zsh-autosuggestions \
 zsh-better-npm-completion \
+zsh-syntax-highlighting \
 )
 
 # per-host

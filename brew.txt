@@ -12,6 +12,7 @@ d-bus
 direnv
 exif
 exiftool
+findutils
 gdbm
 geoip
 gettext
@@ -48,10 +49,10 @@ qt
 readline
 rename
 squid
+thefuck
 tree
 watch
 watchman
 wget
 wireshark
 zsh
-thefuck

@@ -65,6 +65,8 @@ fi
 # add npm local bin to path
 PATH="./node_modules/.bin:${PATH}"
 
+source <(npm completion)
+
 export EDITOR="vim"
 
 function strhas () {

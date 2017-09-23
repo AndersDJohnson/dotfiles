@@ -82,6 +82,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# conflicts with git alias l=log
+unalias l
+
 # Autocorrect exceptions
 #alias vim='nocorrect vim '
 alias git='nocorrect git '

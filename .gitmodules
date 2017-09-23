@@ -28,3 +28,6 @@
 [submodule "lss.sh"]
 	path = lss.sh
 	url = https://github.com/adjohnson916/lss.sh.git
+[submodule "alias-echo.sh"]
+	path = alias-echo.sh
+	url = https://github.com/AndersDJohnson/alias-echo.sh.git

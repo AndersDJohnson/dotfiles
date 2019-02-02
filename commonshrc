@@ -65,6 +65,8 @@ fi
 
 # add npm local bin to path
 PATH="./node_modules/.bin:${PATH}"
+# add global yarn bin to path
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 source <(npm completion)
 

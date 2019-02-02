@@ -1,0 +1,60 @@
+# GitHub shell helpers
+
+function gi() {
+  curl -L -s https://www.gitignore.io/api/$@
+}
+
+function github-host() {
+  git remote -vv | grep origin | grep push | sed -E 's/.*(@|:\/\/)([^\/:]*)[\/:][^\/]*\/[^\/]*\.git.*/\2/' | sed -E 's/.*(@|:\/\/)([^\/:]*)[\/:][^\/]*\/[^\/]*(push).*/\2/'
+}
+
+function github-repo() {
+  git remote -vv | grep origin | grep push | sed -E 's/.*(@|:\/\/)[^\/:]*[\/:]([^\/]*\/[^\/]*)\.git.*/\2/' | sed -E 's/.*(@|:\/\/)[^\/:]*[\/:]([^\/]*\/[^\/]*) \(push\).*/\2/'
+}
+
+function git-current-branch() {
+  git rev-parse --abbrev-ref HEAD
+}
+
+function git-tag-nth-latest() {
+  N=${1:-1}
+  git fetch --quiet origin
+  git for-each-ref --format='%(refname:short)' --sort='-creatordate' refs/tags | head -n$N | tail -n1
+}
+
+function git-tag-latest() {
+  git-tag-nth-latest
+}
+
+function git-tag-prev() {
+  git-tag-nth-latest 2
+}
+
+function github-compare-master-to-tag-nth-latest() {
+  echo "https://$(github-host)/$(github-repo)/compare/$(git-tag-nth-latest $1)...master"
+}
+
+function github-compare-master-to-tag-latest() {
+  github-compare-master-to-tag-nth-latest
+}
+
+function github-compare-tags-nth-latest() {
+  echo "https://$(github-host)/$(github-repo)/compare/$(git-tag-nth-latest $1)...$(git-tag-nth-latest $2)"
+}
+
+function github-compare-tags-latest-to-prev() {
+  github-compare-tags-nth-latest 2 1
+}
+
+function open-github-compare-tags-nth-latest() {
+  open "$(github-compare-tags-nth-latest $1 $2)"
+}
+
+function open-github-compare-master-to-tag-latest() {
+  open "$(github-compare-master-to-tag-latest)"
+}
+
+function open-github-compare-tags-latest-to-prev() {
+  open "$(github-compare-tags-latest-to-prev)"
+}
+

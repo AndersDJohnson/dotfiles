@@ -10,8 +10,9 @@ if [ -f ~/.commonshrc.host ]; then
   source ~/.commonshrc.host
 fi
 
-HOSTNAME=$(hostname)
+source "$BASE_DOTFILES/githubsh"
 
+HOSTNAME=$(hostname)
 
 HOSTNAMECOMMONSHRC=$BASE_DOTFILES/commonshrc.$HOSTNAME
 if [ -n "$INSTALLING" ]; then

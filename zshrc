@@ -109,3 +109,5 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 # SHIFT-TAB
 bindkey '^[[Z' reverse-menu-complete
 
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

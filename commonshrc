@@ -68,6 +68,8 @@ PATH="./node_modules/.bin:${PATH}"
 # add global yarn bin to path
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+export FZF_DEFAULT_COMMAND='fd --type f'
+
 alias npm-pack-check="npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
 
 source <(npm completion)

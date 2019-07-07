@@ -10,6 +10,7 @@ if [ -f ~/.commonshrc.host ]; then
   source ~/.commonshrc.host
 fi
 
+source "$BASE_DOTFILES/git.sh"
 source "$BASE_DOTFILES/githubsh"
 
 HOSTNAME=$(hostname)

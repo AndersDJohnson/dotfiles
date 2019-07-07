@@ -3,6 +3,6 @@ function gds () {
 }
 
 function grbif () {
-  EDITOR="vim -c 'silent 2,\$s/pick/fixup/'" git rebase -i
+  EDITOR="vim -c 'silent 2,\$s/pick/fixup/'" git rebase -i $@
 }
 

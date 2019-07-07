@@ -117,3 +117,8 @@ if [ -f ~/apps/google-cloud-sdk/path.zsh.inc ]; then source ~/apps/google-cloud-
 # The next line enables shell command completion for gcloud.
 if [ -f ~/apps/google-cloud-sdk/completion.zsh.inc ]; then source ~/apps/google-cloud-sdk/completion.zsh.inc; fi
 
+# Helper to lookup commands from the zsh git plugin cheatsheet
+function gx () {
+  `fzf < ~/.dotfiles/zsh-git-plugin-cheatsheet.txt | cut -f3 -d'|' | tr _ ' '`
+} 
+

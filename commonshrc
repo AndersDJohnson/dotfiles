@@ -227,3 +227,11 @@ function colorwdiff() {
     -y $'\033[30;42m' -z $'\033[0m' $@
 }
 
+function docker-here() {
+  docker run -it --rm --mount src="$(pwd)",target=/host,type=bind $@
+}
+
+function docker-node() {
+  docker-here node host/${1:-index} ${@:2}
+}
+

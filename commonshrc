@@ -228,10 +228,14 @@ function colorwdiff() {
 }
 
 function docker-here() {
-  docker run -it --rm --mount src="$(pwd)",target=/host,type=bind $@
+  docker run -it --rm --mount src="$(pwd)",target=/app,type=bind -w /app $@
 }
 
 function docker-node() {
-  docker-here node host/${1:-index} ${@:2}
+  docker-here node $@
+}
+
+function docker-npx() {
+  docker-here node npx $@
 }
 

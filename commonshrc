@@ -228,7 +228,7 @@ function colorwdiff() {
 }
 
 function docker-here() {
-  docker run -it --rm --mount src="$(pwd)",target=/app,type=bind -w /app $@
+  docker run --interactive --tty --rm --mount src="$(pwd)",target=/app,type=bind --workdir /app $@
 }
 
 function docker-node() {

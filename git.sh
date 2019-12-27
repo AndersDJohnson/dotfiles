@@ -1,5 +1,5 @@
 function gds () {
-  git diff --staged
+  git diff --staged $@
 }
 
 function grbif () {

@@ -99,6 +99,9 @@ if [ -f ~/.commonshrc ]; then
     source ~/.commonshrc
 fi
 
+export FPATH="$HOME/.dotfiles/docked-node/zfuncs:$FPATH"
+autoload docked-node
+
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search

@@ -31,3 +31,6 @@
 [submodule "alias-echo.sh"]
 	path = alias-echo.sh
 	url = https://github.com/AndersDJohnson/alias-echo.sh.git
+[submodule "docked-node"]
+	path = docked-node
+	url = git@github.com:AndersDJohnson/docked-node.git

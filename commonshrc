@@ -65,7 +65,11 @@ if [ -d "${GOPATH_DIR}" ]; then
 fi
 
 # add npm local bin to path
+#  including directories above, e.g., for monorepos
+PATH="../../node_modules/.bin:${PATH}"
+PATH="../node_modules/.bin:${PATH}"
 PATH="./node_modules/.bin:${PATH}"
+
 # add global yarn bin to path
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 

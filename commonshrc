@@ -231,3 +231,29 @@ function colorwdiff() {
     -y $'\033[30;42m' -z $'\033[0m' $@
 }
 
+function ckdir() {
+  mkdir $@
+  cd $@
+}
+
+alias trot13='tr A-Za-z N-ZA-Mn-za-m'
+
+function rot13 {
+  echo "$1" | trot13
+}
+
+# List recently modified
+alias lt='ls -alt | head -20'
+
+# List sub-directories
+alias lsd='ls -al -d * | egrep "^d"'
+
+alias _+='pushd .'
+alias _='popd'
+
+# Find disk space abusers in current directory
+alias dusk='du -s -k -c * | sort -rn'
+
+# Show programs listening on port
+#alias nsl='netstat -alnp ip | grep -v CLOSE_WAIT | cut -c-6,21-94 | tail +2'
+

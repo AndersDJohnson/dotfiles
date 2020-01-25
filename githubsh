@@ -1,7 +1,17 @@
 # GitHub shell helpers
 
+# merge api
+function gam() {
+  curl -s -X PUT -d '{"merge_method":"squash"}' "https://git.target.com/api/v3/repos/tts-mobile/AdaptiveUI/pulls/$1/merge?access_token=${GITHUB_TOKEN}" | json -o inspect
+}
+
+# pr api
+function gapr() {
+  curl -s "https://git.target.com/api/v3/repos/tts-mobile/AdaptiveUI/pulls/7464?access_token=${GITHUB_TOKEN}" | json -o inspect
+}
+
 function gi() {
-  curl -L -s https://www.gitignore.io/api/$@
+  curl -k -L -s https://www.gitignore.io/api/$@
 }
 
 function github-host() {

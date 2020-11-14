@@ -242,6 +242,10 @@ function ckdir() {
   cd $@
 }
 
+function cdc() {
+  cd ~/code/$1
+}
+
 alias trot13='tr A-Za-z N-ZA-Mn-za-m'
 
 function rot13 {

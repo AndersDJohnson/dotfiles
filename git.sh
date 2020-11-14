@@ -1,3 +1,8 @@
+
+function gcnm () {
+  gcmsg $@ -n
+}
+
 function gds () {
   git diff --staged $@
 }

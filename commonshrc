@@ -79,6 +79,10 @@ function rmnpm () {
   find . -type d -name node_modules -exec rm -rf + \;
 }
 
+function nr () {
+  npm run $@
+}
+
 export FZF_DEFAULT_COMMAND='fd --type f'
 
 alias npm-pack-check="npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"

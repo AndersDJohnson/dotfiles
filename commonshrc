@@ -197,7 +197,7 @@ export NVM_DIR=~/.nvm
 # ruby gem user bin path
 # http://guides.rubygems.org/faqs/
 if which ruby >/dev/null && which gem >/dev/null; then
-  PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+  PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
 
 MAVEN_BIN="${HOME}/.mvbn/bin"

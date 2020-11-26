@@ -28,6 +28,7 @@ if [ -f "$PRIVATECOMMONSHRC" ]; then
   source "$PRIVATECOMMONSHRC"
 fi
 
+function $ { $@ }
 
 alias x=exit
 

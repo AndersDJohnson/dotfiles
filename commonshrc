@@ -83,6 +83,18 @@ function nr () {
   npm run $@
 }
 
+function docker-here() {
+  docker run --interactive --tty --rm --mount src="$(pwd)",target=/app,type=bind --workdir /app $@
+}
+
+function docker-node() {
+  docker-here node $@
+}
+
+function docker-npx() {
+  docker-here node npx $@
+}
+
 export FZF_DEFAULT_COMMAND='fd --type f'
 
 alias npm-pack-check="npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
